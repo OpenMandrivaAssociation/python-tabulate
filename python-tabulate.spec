@@ -1,6 +1,6 @@
 Name:		python-tabulate
 Version:	0.9.0
-Release:	2
+Release:	3
 Source0:	https://files.pythonhosted.org/packages/source/t/tabulate/tabulate-%{version}.tar.gz
 Summary:	Pretty-print tabular data
 URL:		https://pypi.org/project/tabulate/
