@@ -1,6 +1,6 @@
 Name:		python-tabulate
 Version:	0.10.0
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/t/tabulate/tabulate-%{version}.tar.gz
 Summary:	Pretty-print tabular data
 URL:		https://pypi.org/project/tabulate/
@@ -13,6 +13,10 @@ BuildArch:	noarch
 
 %description
 Pretty-print tabular data
+
+%build -p
+# The sdist is not a git checkout, so the versioning backend needs the version.
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 
 %files
 %{_bindir}/tabulate
