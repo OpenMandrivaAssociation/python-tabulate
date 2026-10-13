@@ -1,12 +1,14 @@
 Name:		python-tabulate
 Version:	0.10.0
-Release:	2
+Release:	3
 Source0:	https://files.pythonhosted.org/packages/source/t/tabulate/tabulate-%{version}.tar.gz
 Summary:	Pretty-print tabular data
 URL:		https://pypi.org/project/tabulate/
 License:	MIT
 Group:		Development/Python
-BuildRequires:	python
+BuildRequires:	pkgconfig(python3)
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(wheel)
 BuildRequires:	python%{pyver}dist(setuptools-scm)
 BuildSystem:	python
 BuildArch:	noarch
